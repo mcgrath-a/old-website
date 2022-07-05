@@ -270,7 +270,7 @@ hr{
 }
 
 /* coursework page responsive sizing */
-@media(min-width: 2000px) {
+@media(min-width: 1200px) {
     #coursework {
         transform: scale(1.5);
     }
