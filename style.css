@@ -396,7 +396,7 @@ hr{
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
+  outline: 1.5px solid grey;
   font-size: 15px;
 }
 
@@ -417,9 +417,13 @@ hr{
 }
 
 .content {
+  font-size: 13px;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+ul {
+  padding-left: 40px;
 }
