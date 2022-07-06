@@ -46,14 +46,17 @@
     </header>
     <!-- Header end -->
 
-        <a href= "https://mcgrath-a.github.io/mcgrath-a.io/index.html" >
-                    <img src= "https://icon-library.com/images/return-button-icon/return-button-icon-17.jpg" style="align:top; width:35; height:35px; border:none;" ></a>
+<!--        <a href= "https://mcgrath-a.github.io/mcgrath-a.io/index.html" >
+                    <img src= "https://icon-library.com/images/return-button-icon/return-button-icon-17.jpg" style="align:top; width:35; height:35px; border:none;" ></a>-->
         <div id="viewer" style="width: 100%; height: 850px;"></div>
           <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
           <script>
             const config = {
               documentId: 'f8b13f07-9e60-4ca4-9acf-56257aa7bbb3',
+              appBarColored: true,
+              themeColor: '#aaebd5',
               darkMode: true,
+
             };
             CloudPDF(config, document.getElementById('viewer')).then((instance) => {
 
