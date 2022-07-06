@@ -24,7 +24,8 @@ body{
 }
 .header_inner{
     padding: 10px 25px;
-    max-width: 750px;
+    max-width: 900px;
+    /*max-width was originally 750*/
     display: flex;
     justify-content: space-between;
     width: 100%;
