@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alyanna's website | Home</title>
+    <title>Alyanna's personal website | Coursework</title>
     <meta name="description" content="Alyanna's personal website">
     <meta name="author" content="Alyanna McGrath">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images_folder/logo.jpg">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,7 +17,9 @@
     <header class="header_wrapper">
         <div class="header_inner">
             <a href="./index.html" class="header-item">
-                 <img class="logo" src="./images_folder/logo.jpg" alt="logo">
+                <img class="logo" src="./images_folder/logo.jpg" alt="logo">
+
+
                 <div>
                     <h1>Alyanna McGrath</h1>
                     <h2>Computer Science Student</h2>
@@ -46,89 +47,33 @@
     </header>
     <!-- Header end -->
 
-<div class = "container_wrapper">
-        <!-- coursework! -->
-        <div class = "container_inner container_about">
-             <h2 class="about__title">Coursework</h2>
+
+    <div class="container_wrapper">
+        <a href= "https://mcgrath-a.github.io/mcgrath-a.io/index.html" >
+                    <img src= "https://icon-library.com/images/return-button-icon/return-button-icon-17.jpg" style="align:top; width:35; height:35px; border:none;" >
+                    </a>
+        <div class="container_inner">
+            <h2 class="blog__title">Coursework</h2>
             <p>Here you will find a detailed description of all the relevent Computer Science classes i have taken.
                 <b>Click</b> on a box to read more !</p>
-            <div class = "courseworkContainer">
+               <hr>
 
-                <img src = "./images_folder/img1.png" class = "image">
-                <div class = "overlay" onclick="displayModal('oxy-confessions-coursework-modal', 0)" style="cursor: pointer;">
-                    <!-- this one has NO text -->
-                    <div class = "text"> </div>
-
+                <button type="button" class="collapsible">Open Section 1</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-            </div>
-            <div class = "courseworkContainer">
-                <img src = "./images_folder/img1.png" class = "image">
-                <div class = "overlay" onclick="displayModal('nba-clutch-coursework-modal', 1)" style="cursor: pointer;">
-                    <div class = "text">NBA Clutch coursework</div>
+                <button type="button" class="collapsible">Open Section 2</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
+                <button type="button" class="collapsible">Open Section 3</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><!-- start article item -->
+
+
             </div>
-        </div>
 
-
-
-            <!-- The Modal -->
-        <div id="oxy-confessions-coursework-modal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div>Oxy Students' Attitudes Toward Various Topics</div>
-                <div style = "text-transform: none; letter-spacing: 0em; line-height: 1.5;">
-                    <p style = "font-size: 17px; text-align: left;"><strong>Dates:</strong> July 2019 - August 2019</p>
-                    <p style = "font-size: 17px; text-align: left;"><strong>Why I made this:</strong>
-                        "Oxy Confessions", an anonymous Facebook page started by Oxy students in October of 2013, contains 34,000+ posts
-                        consisting of gossip, strife, and honest opinions about worldly topics. Inspired by Ben Schmidt's <a href = "https://benschmidt.org/profGender/#">
-                        <i>Gendered Language in Teacher Reviews</i></a>, I made this website to reveal Oxy students' attitudes toward various
-                        topics in the world.
-                    </p>
-                    <p style = "font-size: 17px; text-align: left;"><strong>Tools used:</strong>
-                        Node.js, MySQL, HTML, CSS, JavaScript, Chart.js
-                    </p>
-                    <ul class = "icons">
-                        <li><a href="http://joeyrose.oxycreates.org/confessionsproject/" class="fas fa-globe" target="_blank" title="Oxy Confessions Project">Oxy Confessions Project</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-     </div>
-            <!-- The Modal -->
-        <div id="nba-clutch-coursework-modal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div>NBA Clutch Project</div>
-                <div style = "text-transform: none; letter-spacing: 0em; line-height: 1.5;">
-                    <p style = "font-size: 17px; text-align: left;"><strong>Dates:</strong> December 2019 - January 2020</p>
-                    <p style = "font-size: 17px; text-align: left;"><strong>Why I made this:</strong>
-                        Everyone has an answer, but no one <i>ever</i> has enough evidence to back it up.
-                        <br> <br>
-                        ... Yes, I'm talking about comparing the clutchness of NBA players. To accurately evaluate one's clutchness, a wealth of data
-                        across long periods of time is needed.
-                        I built this web app to allow for the comparison of NBA players under different game scenarios,
-                        equiping users with the tools to settle this age-old debate. It pulls data directly from stats.nba.com's API,
-                        ensuring that every graph 100% accurate.
-                    </p>
-                    <p style = "font-size: 17px; text-align: left;"><strong>Tools used:</strong>
-                        Flask, <a href = "https://github.com/swar/nba_api">nba_api</a>, HTML, CSS, JavaScript, Chart.js
-                    </p>
-                    <ul class = "icons">
-                        <li><a href="https://github.com/Joey-Rose/nbaclutchproject" class="fab fa-github" target="_blank" title="NBA Clutch Project">NBA Clutch Project</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
+            <hr>
             <div class="find-me">
                 <h3>Find me Here</h3>
                 <div class="social-div">
@@ -154,27 +99,19 @@
     </div>
 </body>
 <script>
-// When the user clicks on the button, open the modal
-function displayModal(modal_id_name, num_close_span) {
-    // Get the modal
-    var modal = document.getElementById(modal_id_name);
-    modal.style.display = "block";
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-    // Get the <span> element that closes the modal
-    span = document.getElementsByClassName("close")[num_close_span];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
     }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
+  });
 }
 </script>
 </html>
