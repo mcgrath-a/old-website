@@ -48,7 +48,8 @@ body{
 }
 .container_wrapper{
     margin: 75px 25px;
-    max-width: 750px;
+    max-width: 900px;
+    /*max-width was originally 750*/
     background: #f7f7f7;
     border: 2px solid #3d3d3d;
 }
